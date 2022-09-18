@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Simple Weight Converter</title>
+<style>
+    body {
+        margin-top: 30px;
+        background-color: #333;
+        color: #fff;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1 class="text-center display-4">Weight Converter</h1>
+                <form>
+                    <input 
+                        type="number"  
+                        class="form-control form-control-lg mb-2" 
+                        placeholder="Enter Pounds..."
+                        id="lbsInput" />
+                </form>
+                <div id="output">
+                    <div class="card bg-primary text-white mb-2">
+                        <div class="card-body">
+                            <h5>Grams : </h5>
+                            <div id="grams"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-success text-white mb-2">
+                        <div class="card-body">
+                            <h5>Kilograms : </h5>
+                            <div id="kgrams"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-danger text-white mb-2">
+                        <div class="card-body">
+                            <h5>Ounces : </h5>
+                            <div id="ounces"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
